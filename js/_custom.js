@@ -79,7 +79,7 @@ $(function() {
     // Loading
 
     function loadInfo() {
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 100; i++) {
         $('#load').animate({  borderSpacing: -360 }, {
           step: function(now,fx) {
             $(this).css('-webkit-transform','rotate('+now+'deg)'); 
@@ -89,13 +89,15 @@ $(function() {
           duration:'slow'
       },'linear');
       };
-      
+
       function changeInfo() {
         $("#infoBody").css('display', 'block');
         $("#load").css('display', 'none');
       }
 
-      setTimeout(changeInfo, 3000);
+
+
+      setTimeout(changeInfo, 8000);
     }
 
     loadInfo();
