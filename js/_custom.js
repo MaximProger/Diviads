@@ -124,11 +124,25 @@ $(function() {
 
     $(".date").html(day + '.' + month + '.' + year + ' ' + hour + ':' + minutes);
 
-    function addPayItem() {
-      $('.payout__item:first-child').css('display', 'flex');
-      $('.payout__item:last-child').css('display', 'none');
+    // function addPayItem() {
+    //   $('.payout__item:first-child').css('display', 'flex');
+    //   $('.payout__item:last-child').css('display', 'none');
+    // }
+
+    // setInterval(addPayItem, 2000);
+
+     function addPayItem() {
+      $('.payout__wrapper:first-child').css('display', 'none');
+      $('.payout__wrapper:nth-child(2)').css('display', 'block');
     }
 
-    setInterval(addPayItem, 2000);
+    function addPayItem2() {
+      $('.payout__wrapper:nth-child(2)').css('display', 'none');
+      $('.payout__wrapper:last-child').css('display', 'block');
+    }
+
+    setTimeout(addPayItem, 3000);
+    setTimeout(addPayItem2, 6000);
+
 
 });
