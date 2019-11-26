@@ -128,7 +128,7 @@
 								class="fas fa-times"></i></p>
 						<p class="info__text">Авторизация в сервисе не пройдена <i class="fas fa-times"></i></p>
 						<p class="info__text">Cумма к выплате- неизвестна <i class="fas fa-times"></i></p>
-						<button type="button" class="btn btn-danger info__btn">Авторизоваться с этого
+						<button type="button" id="authBtn" class="btn btn-danger info__btn">Авторизоваться с этого
 							устройства</button>
 						<p class="info__text">Авторизуйтесь в системе и проверьте количество коммерческих просмотров</p>
 						</div>
@@ -144,35 +144,41 @@
 		<div class="container text-center">
 			<h2 class="payouts__title">Последние выплаты пользователям сервиса</h2>
 			<div class="payout__inner">
+					<div class="payout__item" id="payout__item-first">
+						<div>656</div>
+						<div class="font-weight-bold">30000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
 				<div class="payout__item">
-					<div>1</div>
+					<div>454</div>
 					<div class="font-weight-bold">30000p</div>
 					<div>Jacob</div>
-					<div>21.11.19 20:19</div>
+					<div class="date"></div>
 				</div>
 				<div class="payout__item">
-					<div>2</div>
+					<div>4543</div>
 					<div class="font-weight-bold">3045600p</div>
 					<div>Jacob</div>
-					<div>21.11.19 20:19</div>
+					<div class="date"></div>
 				</div>
 				<div class="payout__item">
-					<div>3</div>
+					<div>6876</div>
 					<div class="font-weight-bold">354000p</div>
 					<div>Jacob</div>
-					<div>21.11.19 20:19</div>
+					<div class="date"></div>
 				</div>
 				<div class="payout__item">
-					<div>4</div>
+					<div>342</div>
 					<div class="font-weight-bold">64000p</div>
 					<div>Jacob</div>
-					<div>21.11.19 20:19</div>
+					<div class="date"></div>
 				</div>
-				<div class="payout__item">
-					<div>5</div>
+				<div class="payout__item" id="payout__item-last">
+					<div>896</div>
 					<div class="font-weight-bold">70000p</div>
 					<div>Jacob</div>
-					<div>21.11.19 20:19</div>
+					<div class="date"></div>
 				</div>
 			</div>
 
@@ -198,7 +204,39 @@
 		<div class="container text-center">
 			<div class="partners__inner">
 				<h2 class="partners__title">Наши партнеры</h2>
-				<div class="partners__img" id="partners__slider">
+				<div class="social__inner" id="social">
+
+						<div class="social__item col text-center">
+							<div class="social__icon"><i class="fas fa-leaf"></i></i></div>
+							<div class="social__text">Vozduh</div>
+						</div>
+
+						<div class="social__item col text-center">
+								<div class="social__icon"><i class="fas fa-meteor"></i></div>
+								<div class="social__text">Mercury</div>
+							</div>
+		
+						<div class="social__item col text-center">
+							<div class="social__icon"><i class="fas fa-poo-storm"></i></div>
+							<div class="social__text">Tor</div>
+						</div>
+		
+						<div class="social__item col text-center">
+							<div class="social__icon"><i class="fas fa-wrench"></i></div>
+							<div class="social__text">WebProf</div>
+						</div>
+		
+						<div class="social__item col text-center">
+							<div class="social__icon"><i class="fab fa-phabricator"></i></div>
+							<div class="social__text">Oko</div>
+						</div>
+		
+						<div class="social__item col text-center">
+							<div class="social__icon"><i class="fas fa-money-check-alt"></i></div>
+							<div class="social__text">Federation</div>
+						</div>
+					</div>
+				<!-- <div class="partners__img" id="partners__slider">
 					<div>
 						<img src="./img/src/logo-1.png" alt="Logo" class="partners__logo">
 					</div>
@@ -217,7 +255,7 @@
 					<div>
 						<img src="./img/src/logo-2.png" alt="Logo" class="partners__logo">
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

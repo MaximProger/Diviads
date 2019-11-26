@@ -30,7 +30,7 @@ $(function() {
           ]
       });
 
-      $('#social').slick({
+      $('.social__inner').slick({
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -100,14 +100,35 @@ $(function() {
 
     loadInfo();
 
+    // Auth Btn
 
-    // for (let i = 1; i < 50; i++) {
-    //   loadInfo();
-    // }
+    function heartBtn() {
+      $('#authBtn').addClass('animation');
+    }
 
-    // $('#load').animate({ transform: 'rotate(360deg)' }, { duration: 1000 });
-    // $('#load').animateRotate(90, 1337, 'linear', function () {});
+    function remHearBtn() {
+      $('#authBtn').removeClass('animation');
+    }
 
+    setInterval(remHearBtn, 100);
+    setInterval(heartBtn, 500);
 
+    // Table
+
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth();
+    let day = date.getDate();
+    let hour = date.getHours();
+    let minutes = date.getMinutes(); 
+
+    $(".date").html(day + '.' + month + '.' + year + ' ' + hour + ':' + minutes);
+
+    function addPayItem() {
+      $('.payout__item:first-child').css('display', 'flex');
+      $('.payout__item:last-child').css('display', 'none');
+    }
+
+    setInterval(addPayItem, 2000);
 
 });
