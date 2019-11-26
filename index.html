@@ -25,22 +25,20 @@
 <body>
 
 	<header class="header">
-		<!-- <nav class="navbar navbar-light">
-			<a class="navbar-brand" title="Сервис проверки начислений за просмотр коммерческого контента"><span>Divi</span> ads</a>
-			<div class="nav__text">
-				<p>пользователей on-line: <span>99</span></p>
-				<p>Выплачено сегодня: <span>XXX XXX руб</span></p>
-			</div>
-		</nav> -->
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="header__logo col"><span><i class="fas fa-coins"></i></span> DiVi ads</div>
-				<nav class="nav col-7 text-right">
-					<a href="#" class="nav__link">Личный кабинет</a>
-					<a href="#" class="nav__link">Новости сервиса</a>
-					<a href="#" class="nav__link">Проверить начисления</a>
-					<a href="#" class="nav__link">F.A.Q.</a>
+				<div class="header__logo col-4"><span><i class="fas fa-coins"></i></span> DiVi ads</div>
+				<nav class="nav col" id="nav">
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">Личный кабинет</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#newsService">Новости сервиса</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">Проверить начисления</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">F.A.Q.</a>
 				</nav>
+				<!-- <div class="nav__burger"><i class="fas fa-bars"></i></div>
+				<div class="nav__close"><i class="fas fa-times"></i></div> -->
+				<button class="nav--toggle" id="nav__toggle" type="button">
+                    <span class="nav--toggle__item">Menu</span>
+                </button>
 			</div>
 		</div>
 	</header>
@@ -48,11 +46,11 @@
 	<section class="intro">
 		<div class="container">
 			<div class="intro__info">
-				<p>Пользователей on-line: <span>99</span></p>
-				<p>Выплачено сегодня: <span>XXX XXX руб</span></p>
+				<p>Пользователей on-line: <span id="online"></span></p>
+				<p>Выплачено сегодня: <span id="money"></span> руб</p>
 			</div>
 			<div class="intro__inner row align-items-center">
-				<div class="intro__content col-6">
+				<div class="intro__content col">
 					<h1 class="intro__title">Сервис проверки начислений за просмотр коммерческого контента</h1>
 					<div class="intro__text">
 						<p>«Если вы пользователь социальных сетей и мессенджеров, то вы, с вероятностью 99.9%,
@@ -60,37 +58,12 @@
 							вам могут быть положены выплаты за это. </p>
 					</div>
 				</div>
-				<div class="col"><img class="intro__img" src="./img/src/intro__logo-2.png" alt="Intro Logo"></div>
+				<div class="intro__img__wrapper col"><img class="intro__img" src="./img/src/intro__logo-2.png" alt="Intro Logo"></div>
 			</div>
 		</div>
 	</section>
 
 	<div class="social">
-		<!-- <div class="container text-center">
-				<div class="social__inner">
-					<a href="#" class="social__link">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-vk"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-whatsapp"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-telegram-plane"></i>
-					</a>
-					<a href="#" class="social__link">
-						<i class="fab fa-viber"></i>
-					</a>
-				</div>
-			</div> -->
 		<div class="container">
 			<div class="social__inner" id="social">
 
@@ -147,35 +120,25 @@
 	<div class="info">
 		<div class="container">
 			<div class="info__inner row align-items-center">
-				<div class="info__content col-8">
+				<div class="info__content col">
 					<h2 class="info__title text-center">Идет проверка ваших начислений</h2>
-					<div class="text-center">
-						<p class="info__text">Проверка положенных начислений с этого устройства не осуществлялась <i
+					<div class="text-center" id="info__content__text">
+						<div id="infoBody">
+							<p class="info__text">Проверка положенных начислений с этого устройства не осуществлялась <i
 								class="fas fa-times"></i></p>
 						<p class="info__text">Авторизация в сервисе не пройдена <i class="fas fa-times"></i></p>
 						<p class="info__text">Cумма к выплате- неизвестна <i class="fas fa-times"></i></p>
 						<button type="button" class="btn btn-danger info__btn">Авторизоваться с этого
 							устройства</button>
 						<p class="info__text">Авторизуйтесь в системе и проверьте количество коммерческих просмотров</p>
+						</div>
+						<i class="fas fa-spinner" id="load"></i>
 					</div>
 				</div>
-				<div class="col"><img src="./img/src/info__logo.svg" alt="Info Logo" class="info__logo"></div>
+				<div class="info__img__wrapper col"><img src="./img/src/info__logo.svg" alt="Info Logo" class="info__logo"></div>
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="auth">
-				<div class="container text-center">
-					<div class="auth__inner row align-items-center">
-						<div class="col"><img src="./img/src/mobile.png" alt="Mobile" class="auth__logo"></div>
-						<div class="auth__text col-7">
-							<h2 class="auth__title">Необходимо авторизироваться</h2>
-							<button type="button" class="btn btn-danger">Авторизоваться с этого устройства</button>
-							<p>Авторизуйтесь в системе и проверьте кол-во коммерческих просмотров</p>
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 	<section class="payouts">
 		<div class="container text-center">
@@ -226,7 +189,7 @@
 						просматривали коммерческий контент (фото-видео материалы, иногда текстовые сообщения) и
 						вам могут быть положены выплаты за это. </p>
 				</div>
-				<div class="col"><img src="./img/src/advant__img.svg" alt="Advant Img" class="advant__img"></div>
+				<div class="advant__img__wrapper col"><img src="./img/src/advant__img.svg" alt="Advant Img" class="advant__img"></div>
 			</div>
 		</div>
 	</section>
@@ -269,7 +232,7 @@
 						</p>
 						<p>Cервис проверки начислений за просмотр коммерческого контента</p>
 					</div>
-					<div class="footer__right col text-right">
+					<div class="footer__right col">
 						<p>Cлужба поддержки: <span>maksimkoshman090@gmail.com</span></p>
 						<p>Политика конфиденциальности <i class="far fa-copyright"></i> 2019</p>
 					</div>
@@ -278,129 +241,37 @@
 		</div>
 	</footer>
 
-	<!-- <div class="nav__pannel">
-		<div class="container">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Личный кабинет</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Новости сервиса</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Проверить начисления</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">F.A.Q.</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+	<!-- Modal Windows -->
 
-
-
-<section class="table__section">
-	<div class="container text-center">
-		<div class="table__inner">
-			<h2 class="table__section__title">Последние выплаты пользователям сервиса</h2>
-			<table class="table table-striped"> -->
-	<!-- <thead>
-						<tr>
-						<th scope="col">#</th>
-						<th scope="col">Имя</th>
-						<th scope="col">Фамилия</th>
-						<th scope="col">Username</th>
-						</tr>
-					</thead> -->
-	<!-- <tbody>
-						<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>30000р</td>
-						<td>21.11.19 17:22</td>
-						</tr>
-						<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>39050р</td>
-						<td>21.11.19 20:19</td>
-						</tr>
-						<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
-						<td>90000р</td>
-						<td>21.11.19 21:01</td>
-						</tr>
-						<th scope="row">4</th>
-						<td>Jacob</td>
-						<td>13400р</td>
-						<td>21.11.19 21:24</td>
-						</tr>
-					</tbody>
-			</table>
-		</div>
-	</div>
-</section>
-
-<div class="advant">
-	<div class="container text-center">
-		<div class="advant__text">
-			<p>
-				«Если вы пользователь социальных сетей и мессенджеров, то вы, с вероятностью 99.9%,
-				просматривали коммерческий контент (фото-видео материалы, иногда текстовые сообщения) и
-				вам могут быть положены выплаты за это. 
-			</p>
-		</div>
-	</div>
-</div>
-
-<section class="partners">
-	<div class="container text-center">
-		<div class="partners__inner">
-			<h2 class="partners__title">Наши партнеры</h2>
-			<div class="partners__img" id="partners__slider">
-					<div>
-						<img src="./img/_src/logo-1.png" alt="Logo" class="partners__logo">
-					</div>
-					<div>
-						<img src="./img/_src/logo-2.png" alt="Logo" class="partners__logo">
-					</div>
-					<div>
-						<img src="./img/_src/logo-3.png" alt="Logo" class="partners__logo">
-					</div>
-					<div>
-						<img src="./img/_src/logo-4.png" alt="Logo" class="partners__logo">
-					</div>
-					<div>
-						<img src="./img/_src/logo-1.png" alt="Logo" class="partners__logo">
-					</div>
-					<div>
-						<img src="./img/_src/logo-2.png" alt="Logo" class="partners__logo">
-					</div>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			  Для просмотра этого раздела небоходимо авторизоваться!
 			</div>
+		  </div>
 		</div>
-	</div>
-</section>
-
-<footer class="footer">
-	<div class="container">
-		<div class="footer__inner">
-			<div class="row">
-				<div class="footer__left col">
-					<p>
-						Divi ADS group сервис проверки начислений за просмотр коммерческого контента
-					</p>
+	  </div>
+	
+	  <div class="modal fade" id="newsService" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLongTitle">Новости сервиса</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
 				</div>
-				<div class="footer__right col text-right">
-					<p>Cлужба поддержки: <span>maksimkoshman090@gmail.com</span></p>
-					<p>Политика конфиденциальности</p>
+				<div class="modal-body">
+				 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate consequatur numquam iure minima sed, iste eos repudiandae?</p>
+				 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate consequatur numquam iure minima sed, iste eos repudiandae?</p>
 				</div>
+			  </div>
 			</div>
-		</div>
-		<div class="footer__copyright text-center">(c) 2019</div>
-	</div>
-</footer> -->
-
+		  </div>
 
 	<!-- Bootstrap && jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
