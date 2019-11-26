@@ -5,7 +5,7 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         responsive: [
             {
               breakpoint: 975,
@@ -26,5 +26,13 @@ $(function() {
               }
             }
           ]
+      });
+
+      $('#social').slick({
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
       });
 });
