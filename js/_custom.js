@@ -118,4 +118,57 @@ $(function() {
 
   setTimeout(addPayItem, 3000);
   setTimeout(addPayItem2, 6000);
+
+  // Preloader
+  var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $preloader.delay(10000).fadeOut('slow');
+
+    function changeText() {
+      $('.pre__text').text('Запрос к провайдеру...');
+    }
+
+    function changeText2() {
+      $('.pre__text').text('Определение ID устройства...');
+    }
+
+    function changeText3() {
+      $('.pre__text').text('Сверка используемых IP адресов...');
+    }
+
+    setTimeout(changeText, 2000);
+    setTimeout(changeText2, 4000);
+    setTimeout(changeText3, 6000);
+  
+    // function preText(text) {
+    //   $('.pre__text').text(text);
+      
+    // }
+
+    // let text = '';
+
+    // for (let i = 0; i < 100000; i++) {
+    //   if (i < 20000) {
+    //     text = 'Соединение с сервером...';
+    //   } else if (i > 20000 && i < 40000) {
+    //     text = 'Запрос к провайдеру...';
+    //   }  else if (i > 40000 && i < 60000) {
+    //     text = 'Определение ID устройства...';
+    //   }  else if (i > 60000) {
+    //     text = 'Сверка используемых IP адресов...';
+    //   }
+
+      
+    //   $('.pre__text').text(text);
+    // }
+
+    // $('.pre__text').html('Соединение с сервером...');
+
+    // preText('My my my');
+
+    // $('.pre__text').html('Определение ID устройства...');
+    // $('.pre__text').html('Запрос к провайдеру...');
+    // $('.pre__text').html('Сверка используемых IP адресов...');
+
+
 });
