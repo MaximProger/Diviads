@@ -397,6 +397,14 @@ h4 {
   margin-bottom: 20px;
 }
 
+.info_body {
+  position: relative;
+}
+
+.info__pos {
+  position: relative;
+}
+
 .info__text {
   font-size: 20px;
   font-weight: bold;
@@ -408,6 +416,13 @@ h4 {
   @media (max-width: $mobile) {
     font-size: 16px;
   }
+
+  &:nth-child(3) {
+    margin-bottom: 60px;
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .info__btn {
@@ -415,6 +430,9 @@ h4 {
   transition: font-size 0.2s linear;
   margin: 10px;
   margin-bottom: 20px;
+  position: absolute;
+  right: 180px;
+  top: 220px;
 
   &.animation {
     font-size: 24px;
@@ -422,9 +440,31 @@ h4 {
     margin-bottom: 20px;
   }
 
+  
+
+  @media (max-width: 1200px) {
+    right: 120px;
+  }
+
+  @media (max-width: $notebook) {
+    right: 155px;
+  }
+
+  @media (max-width: $tablet) {
+    right: 65px;
+  }
+
+  @media (max-width: $mobile) {
+    position: static;
+    top: 195px;
+    right: 30px;
+  }
+
   @media (max-width: $mobile-sm) {
     font-size: 16px;
+    position: static;
   }
+
 }
 
 .info__btn__link {
