@@ -122,23 +122,89 @@ $(function() {
   // Preloader
   var $preloader = $('#p_prldr'),
         $svg_anm   = $preloader.find('.svg_anm');
-    $preloader.delay(10000).fadeOut('slow');
+    $preloader.delay(55000).fadeOut('slow');
 
     function changeText() {
-      $('.pre__text').text('Запрос к провайдеру...');
+      $('#pre__text').text('Запрос к провайдеру...');
     }
 
     function changeText2() {
-      $('.pre__text').text('Определение ID устройства...');
+      $('#pre__text').text('Определение ID устройства...');
     }
 
     function changeText3() {
-      $('.pre__text').text('Сверка используемых IP адресов...');
+      $('#pre__text').text('Сверка используемых IP адресов...');
     }
 
-    setTimeout(changeText, 2000);
-    setTimeout(changeText2, 4000);
-    setTimeout(changeText3, 6000);
+    function changeText4() {
+      $('#pre__text').text('');
+    }
+
+    setTimeout(changeText, 5000);
+    setTimeout(changeText2, 10000);
+    setTimeout(changeText3, 15000);
+    setTimeout(changeText4, 20000);
+
+    function pridrTitle() {
+      $('#pridr__view').show(500);
+    }
+
+    setTimeout(pridrTitle, 20000);
+
+    function pridrSocial() {
+      $('#pridr__social').show(500);
+    }
+
+    setTimeout(pridrSocial, 25000);
+
+    function pridrMessanger() {
+      $('#pridr__messanger').show(500);
+    }
+
+    setTimeout(pridrMessanger, 30000);
+
+    function pridrVideo() {
+      $('#pridr__video').show(500);
+    }
+
+    setTimeout(pridrVideo, 35000);
+
+    function pridrContent() {
+      $('#pridr__content').show(500);
+    }
+
+    setTimeout(pridrContent, 40000);
+
+    function pridrCabinet() {
+      $('#pridr__cabinet').show(500);
+    }
+
+    setTimeout(pridrCabinet, 45000);
+
+    function pridrReward() {
+      $('#pridr__reward').show(500);
+    }
+
+    setTimeout(pridrReward, 50000);
+
+    function pridrMoney() {
+      $('#pridr__money').show(500);
+    }
+
+    setTimeout(pridrMoney, 50000);
+
+    // Money
+
+    let pridr__money = -170;
+    $('#gold__money').html(pridr__money);
+
+    function incrMoney() {
+      pridr__money += 1;
+      $("#gold__money").html(pridr__money);
+    }
+
+    setInterval(incrMoney, 300);
+
   
     // function preText(text) {
     //   $('.pre__text').text(text);

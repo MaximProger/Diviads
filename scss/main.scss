@@ -695,28 +695,87 @@ h4 {
   .contpre small{font-size:25px;}
    
   .contpre{
-  width: 300px;
-  height: 100px;
-  position: absolute;
-  left: 50%;top: 48%;
-  margin-left:-125px;
-  margin-top:-75px;
+  // width: 300px;
+  // height: 100px;
+  // position: absolute;
+  // left: 50%;top: 48%;
+  // margin-left:-125px;
+  // margin-top:-75px;
+  padding-top: 60px;
   color:#fff;
-  font-size:40px;
+  font-size:18px;
  
   text-align:center;
-  line-height:35px;}
+  line-height:35px;
+  position: relative;
+}
    
   #p_prldr .svg_anm {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  background: url('../img/src/circles.svg');
-  background-size:80px;    
-  margin: 156px 0 0 -40px;}
+  width: 30px;
+  height: 30px;
+  background: url('../img/src/oval.svg');
+  background-size: 30px;   
+  margin: 5px 0 0 5px; 
+  
 
-  .pre__text {
-    margin-top: 100px;
-    font-size: 18px;
+  &-1 {
+    width: 80px;
+    height: 80px;
+    background: url('../img/src/circles.svg');
+    background-size:80px;  
+    margin: 110px 0 0 -40px;
+  }
+}
+
+  #pre__text {
+    margin-top: 110px;
     color: $blue;
   }
+
+.fa-check-circle {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(17, 185, 17);
+}
+
+#pridr__view {
+  margin-top: 90px;
+  display: none;
+}
+
+#pridr__social {
+  display: none;
+}
+
+#pridr__messanger {
+  display: none;
+}
+
+#pridr__video {
+  display: none;
+}
+
+#pridr__content {
+  display: none;
+  margin-top: 40px;
+}
+
+#pridr__cabinet {
+  display: none;
+}
+
+#pridr__reward {
+  margin-top: 60px;
+  display: none;
+}
+
+#pridr__money {
+  display: none;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  span {
+    color: rgb(223, 226, 34);
+  }
+}
