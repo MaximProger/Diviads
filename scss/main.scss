@@ -216,6 +216,11 @@ h4 {
   background-size: cover;
   position: relative;
 
+  &--service {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
   @media (max-width: $mobile) {
     padding-top: 120px;
     padding-bottom: 40px;
@@ -255,6 +260,18 @@ h4 {
   @media (max-width: $mobile-sm) {
     top: 11%;
   }
+
+  &--service {
+    top: 16%;
+
+    @media (max-width: $notebook) {
+      top: 18%;
+    }
+
+    @media (max-width: $mobile) {
+      top: 10%;
+    }
+  }
 }
 
 .intro__title {
@@ -287,12 +304,18 @@ h4 {
   font-size: 16px;
   line-height: 25px;
   color: #b7e6ff;
+
+  &--service {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+  }
 }
 
 .intro__img__wrapper {
   @media (max-width: $mobile) {
     width: 100%;
   }
+
 }
 
 .intro__img {
@@ -408,20 +431,22 @@ h4 {
 .info__id {
   margin: 0;
   color: white;
+  font-size: 1.3rem;
 
   span {
     color: $blue;
-    font-weight: bold;
   }
 }
 
 .info__money {
   color: white;
+  text-decoration: underline;
 
   span {
     color: #db4437;
     font-weight: 900;
     font-size: 1.3rem;
+    
   }
 }
 
@@ -516,6 +541,13 @@ h4 {
 
 .payouts {
   padding: 60px 0;
+
+  &--service {
+    padding-top: 40px;
+    .payout__item {
+      color: $text;
+    }
+  }
 
 }
 
@@ -701,7 +733,7 @@ h4 {
 // Preloader
 
 #p_prldr{
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right:0;
@@ -804,11 +836,24 @@ h4 {
   }
 }
 
+// Service Main 
+
+.service__main {
+  padding: 40px 0;
+  border-bottom: 1px dashed $gray;
+  .col-6 {
+    @media (max-width: $tablet) {
+      flex-basis: auto;
+      max-width: 100%;
+    }
+  }
+}
+
 // Analys
 
 .analys {
-  padding: 60px 0;
-  background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
+  // padding-top: 60px;
+  color: $text;
 
   @media (max-width: $notebook) {
     padding-bottom: 30px;
@@ -826,9 +871,9 @@ h4 {
 }
 
 .analys__title {
-  color: white;
   font-weight: bold;
   margin-bottom: 20px;
+  color: $viob;
 }
 
 .info_body {
@@ -840,9 +885,7 @@ h4 {
 }
 
 .analys__text {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+  font-size: 1.5rem;
 
   span {
     color: #db4437;
@@ -854,11 +897,16 @@ h4 {
   @media (max-width: $mobile) {
     font-size: 16px;
   }
+
+  &--money {
+    font-size: 1.5rem;
+  }
 }
 
 .analys__btn {
-  font-size: 22px;
+  font-size: 26px;
   margin: 10px;
+  margin-top: 20px;
   
   @media (max-width: $notebook) {
     margin-bottom: 30px;
@@ -920,7 +968,8 @@ h4 {
 // Data
 
 .data {
-  padding: 60px 0;
+  // padding-top: 30px;
+  color: $text;
 }
 
 .data__content {
@@ -942,7 +991,6 @@ h4 {
 
 .data__text {
   font-size: 20px;
-  color: $viob;
 
   @media (max-width: $mobile) {
     font-size: 16px;

@@ -142,6 +142,8 @@ $(function() {
         $svg_anm   = $preloader.find('.svg_anm');
     $preloader.delay(55000).fadeOut('slow');
 
+  // Text change and hide
+
     function changeText() {
       $('#pre__text').text('Запрос к провайдеру...');
     }
@@ -162,6 +164,8 @@ $(function() {
     setTimeout(changeText2, 10000);
     setTimeout(changeText3, 15000);
     setTimeout(changeText4, 20000);
+
+    // Analys Show
 
     function pridrTitle() {
       $('#pridr__view').show(500);
@@ -187,6 +191,19 @@ $(function() {
 
     setTimeout(pridrVideo, 35000);
 
+     // Analys Hide
+
+     function analysHide() {
+      $('#pridr__view').hide(500);
+      $('#pridr__social').hide(500);
+      $('#pridr__messanger').hide(500);
+      $('#pridr__video').hide(500);
+    }
+
+    setTimeout(analysHide, 40000);
+
+    // Content Show
+
     function pridrContent() {
       $('#pridr__content').show(500);
     }
@@ -198,6 +215,17 @@ $(function() {
     }
 
     setTimeout(pridrCabinet, 45000);
+
+    // Content Hide
+
+    function contentHide() {
+      $('#pridr__content').show(500);
+      $('#pridr__cabinet').show(500);
+      $('#pridr__content').hide(500);
+      $('#pridr__cabinet').hide(500);
+    }
+
+    setTimeout(contentHide, 50000);
 
     function pridrReward() {
       $('#pridr__reward').show(500);
@@ -213,7 +241,7 @@ $(function() {
 
     // Moneys
 
-    let pridr__money = -159;
+    let pridr__money = 0;
     $('#gold__money').html(pridr__money);
 
     function incrMoney() {
