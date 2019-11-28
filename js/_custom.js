@@ -308,8 +308,6 @@ $(function() {
     // Cards Form
 
     var creditly = Creditly.initialize(
-      '.creditly-wrapper .expiration-month-and-year',
       '.creditly-wrapper .credit-card-number',
-      '.creditly-wrapper .security-code',
       '.creditly-wrapper .card-type');
 });

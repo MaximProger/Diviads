@@ -447,11 +447,12 @@ h4 {
 .info__money {
   color: white;
   text-decoration: underline;
+  font-size: 1.7rem;
 
   span {
     color: #db4437;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     
   }
 }
@@ -802,10 +803,12 @@ h4 {
     color: $blue;
   }
 
-.fa-check-circle {
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(17, 185, 17);
+.pridr__text {
+  i {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(0, 126, 10);
+  }
 }
 
 #pridr__view {
@@ -1044,6 +1047,7 @@ h4 {
 .output__title {
   color: $viob;
   font-weight: bold;
+  margin-bottom: 20px;
 
   span {
     color: #db4437;
@@ -1063,5 +1067,19 @@ h4 {
   @media (max-width: $notebook) {
     flex-basis: auto;
     max-width: 100%;
+  }
+}
+
+.output__form {
+  display: flex;
+  justify-content: center;
+}
+
+.output__text {
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  @media (max-width: $mobile) {
+    font-size: 1rem;
   }
 }
