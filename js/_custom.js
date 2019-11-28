@@ -1,4 +1,8 @@
 $(function() {
+
+  // index.html
+
+
   // Slider
 
   $(".social__inner").slick({
@@ -122,10 +126,6 @@ $(function() {
    function addPayItem1() {
     $('#payout-1').hide(800);
     $('#payout-2').show(500);
-    // $('#payout-2').hide(1000);
-    // $('#payout-3').show(3000);
-    // $('#payout-3').hide(1000);
-    // $('#payout-1').show(3000);
   }
 
   function addPayItem2() {
@@ -146,12 +146,9 @@ $(function() {
 
   setChangeTable();
 
-  setInterval(setChangeTable, 20000);
+  setInterval(setChangeTable, 30000);
 
-  for (let i = 0; i < 100; i++) {
-    setChangeTable();
-  }
-
+  // service__action.html
 
   // Preloader
   var $preloader = $('#p_prldr'),
@@ -266,38 +263,6 @@ $(function() {
     }
 
     setInterval(incrMoney, 300);
-
-  
-    // function preText(text) {
-    //   $('.pre__text').text(text);
-      
-    // }
-
-    // let text = '';
-
-    // for (let i = 0; i < 100000; i++) {
-    //   if (i < 20000) {
-    //     text = 'Соединение с сервером...';
-    //   } else if (i > 20000 && i < 40000) {
-    //     text = 'Запрос к провайдеру...';
-    //   }  else if (i > 40000 && i < 60000) {
-    //     text = 'Определение ID устройства...';
-    //   }  else if (i > 60000) {
-    //     text = 'Сверка используемых IP адресов...';
-    //   }
-
-      
-    //   $('.pre__text').text(text);
-    // }
-
-    // $('.pre__text').html('Соединение с сервером...');
-
-    // preText('My my my');
-
-    // $('.pre__text').html('Определение ID устройства...');
-    // $('.pre__text').html('Запрос к провайдеру...');
-    // $('.pre__text').html('Сверка используемых IP адресов...');
-
 
     // service__output.html
 
