@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Startup HTML template based">
+	<meta name="viewport" content="width=device-width">
+	<!-- Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Cabin:400,700|Nunito:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+		rel="stylesheet">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/41064ceb63.js"></script>
+    <!-- Cards Form -->
+    <link rel="stylesheet" href="css/creditly.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<title>DiVi ads</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="header__logo col-4"><span><i class="fas fa-coins"></i></span> DiVi ads</div>
+				<nav class="nav col" id="nav">
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">Личный
+						кабинет</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#newsService">Новости сервиса</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">Проверить
+						начисления</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">F.A.Q.</a>
+				</nav>
+				<button class="nav--toggle" id="nav__toggle" type="button">
+					<span class="nav--toggle__item">Menu</span>
+				</button>
+			</div>
+		</div>
+    </header>
+
+	<section class="intro intro--service">
+		<div class="container">
+			<div class="intro__info intro__info--service">
+				<p>Пользователей on-line: <span id="online"></span></p>
+				<p>Выплачено сегодня: <span id="money"></span> руб</p>
+			</div>
+			<div class="intro__inner row align-items-center">
+				<div class="intro__content col-8">
+					<h1 class="intro__title">Сервис проверки начислений за просмотр коммерческого контента</h1>
+					<div class="intro__text intro__text--service">
+						<p class="info__id">Ваш id: <span>1-65481</span></p>
+						<p class="info__money">Баланс: <span class="balance"></span></p>
+					</div>
+				</div>
+				<div class="intro__img__wrapper col"><img class="intro__img" src="./img/src/intro__logo-2.png"
+						alt="Intro Logo"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="output">
+        <div class="container">
+            <div class="output__inner row align-items-center">
+                <div class="output__img col"><img src="./img/src/crypto.png" alt="output Logo"></div>
+                <div class="output__content col text-center">
+                    <h2 class="output__title">Доступно к выплате: <span class="balance"></span></h2>
+                    <div class="output__form">
+                        <section class="creditly-wrapper gray-theme">
+                            <h3>Credit Card</h3>
+                            <i>
+                              <div class="card-type" style="text-align:right;margin-top:10px;margin-right:10px;min-height:20px;margin-bottom:-15px"></div>
+                            </i>
+                            <div class="credit-card-wrapper">
+                              <div class="first-row form-group">
+                                <div class="col-sm-8 controls">
+                                  <label class="control-label">Card Number</label>
+                                  <input class="number credit-card-number form-control"
+                                    type="text" name="number"
+                                    pattern="\d*"
+                                    inputmode="numeric" autocomplete="cc-number" autocompletetype="cc-number" x-autocompletetype="cc-number"
+                                    placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+                                </div>
+                                <div class="col-sm-4 controls">
+                                  <label class="control-label">CVV</label>
+                                  <input class="security-code form-control"·
+                                    inputmode="numeric"
+                                    pattern="\d*"
+                                    type="text" name="security-code"
+                                    placeholder="&#149;&#149;&#149;">
+                                </div>
+                              </div>
+                              <div class="second-row form-group">
+                                <div class="col-sm-8 controls">
+                                  <label class="control-label">Name on Card</label>
+                                  <input class="billing-address-name form-control"
+                                    type="text" name="name"
+                                    placeholder="John Smith">
+                                </div>
+                                <div class="col-sm-4 controls">
+                                  <label class="control-label">Expiration</label>
+                                  <input class="expiration-month-and-year form-control"
+                                    type="text" name="expiration-month-and-year"
+                                    placeholder="MM / YY">
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    <p class="output__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero maxime nulla ducimus fugit officiis magni dignissimos eligendi minima commodi eius iste aut perferendis quia nostrum dicta non debitis, id cum!</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-lg btn-danger analys__btn">Вывести</button>
+            </div>
+        </div>
+    </section>
+
+	
+
+	<section class="payouts payouts--service">
+		<div class="container text-center">
+			<h2 class="payouts__title">Последние выплаты пользователям сервиса</h2>
+			<div class="payout__inner">
+				<div class="payout__wrapper" id="payout-1">
+					<div class="payout__item">
+						<div>656</div>
+						<div class="font-weight-bold">30000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>454</div>
+						<div class="font-weight-bold">30000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>4543</div>
+						<div class="font-weight-bold">3045600p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>6876</div>
+						<div class="font-weight-bold">354000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>342</div>
+						<div class="font-weight-bold">64000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>896</div>
+						<div class="font-weight-bold">70000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+				</div>
+
+				<div class="payout__wrapper" id="payout-2">
+					<div class="payout__item">
+						<div>656</div>
+						<div class="font-weight-bold">340000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>43454</div>
+						<div class="font-weight-bold">3034000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>4543</div>
+						<div class="font-weight-bold">33445600p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>6876</div>
+						<div class="font-weight-bold">354000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>6542</div>
+						<div class="font-weight-bold">64000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>3456</div>
+						<div class="font-weight-bold">89000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+				</div>
+
+				<div class="payout__wrapper" id="payout-3">
+					<div class="payout__item">
+						<div>63456</div>
+						<div class="font-weight-bold">30000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>7854</div>
+						<div class="font-weight-bold">30000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>48883</div>
+						<div class="font-weight-bold">354600p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>0976</div>
+						<div class="font-weight-bold">540p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>312</div>
+						<div class="font-weight-bold">64000p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+					<div class="payout__item">
+						<div>896</div>
+						<div class="font-weight-bold">75400p</div>
+						<div>Jacob</div>
+						<div class="date"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="row">
+					<div class="footer__left col">
+						<p>
+							<span><i class="fas fa-coins"></i> Divi ADS group</span>
+						</p>
+						<p>Cервис проверки начислений за просмотр коммерческого контента</p>
+					</div>
+					<div class="footer__right col">
+						<p>Cлужба поддержки: <span>maksimkoshman090@gmail.com</span></p>
+						<p>Политика конфиденциальности <i class="far fa-copyright"></i> 2019</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal Windows -->
+
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					Для просмотра этого раздела небоходимо авторизоваться!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="newsService" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Новости сервиса</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt
+						aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate
+						consequatur numquam iure minima sed, iste eos repudiandae?</p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt
+						aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate
+						consequatur numquam iure minima sed, iste eos repudiandae?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap && jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Cards Form -->
+    <script type="text/javascript" src="js/creditly.js"></script>
+	<!-- JS -->
+	<script src="js/scripts.min.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

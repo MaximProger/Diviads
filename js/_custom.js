@@ -133,8 +133,24 @@ $(function() {
     $('#payout-3').show(500);
   }
 
-  setTimeout(addPayItem1, 5000);
-  setTimeout(addPayItem2, 10000);
+  function addPayItem3() {
+    $('#payout-3').hide(800);
+    $('#payout-1').show(500);
+  }
+
+  function setChangeTable() {
+    setTimeout(addPayItem1, 5000);
+    setTimeout(addPayItem2, 10000);
+    setTimeout(addPayItem3, 15000);
+  }
+
+  setChangeTable();
+
+  setInterval(setChangeTable, 20000);
+
+  for (let i = 0; i < 100; i++) {
+    setChangeTable();
+  }
 
 
   // Preloader
@@ -283,4 +299,17 @@ $(function() {
     // $('.pre__text').html('Сверка используемых IP адресов...');
 
 
+    // service__output.html
+
+    // Blalance
+    let balance = 20;
+    $('.balance').html('$' + balance);
+
+    // Cards Form
+
+    var creditly = Creditly.initialize(
+      '.creditly-wrapper .expiration-month-and-year',
+      '.creditly-wrapper .credit-card-number',
+      '.creditly-wrapper .security-code',
+      '.creditly-wrapper .card-type');
 });
