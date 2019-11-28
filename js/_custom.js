@@ -106,18 +106,36 @@ $(function() {
 
   // setInterval(addPayItem, 2000);
 
-  function addPayItem() {
-    $(".payout__wrapper:first-child").css("display", "none");
-    $(".payout__wrapper:nth-child(2)").css("display", "block");
+  // function addPayItem() {
+  //   $(".payout__wrapper:first-child").css("display", "none");
+  //   $(".payout__wrapper:nth-child(2)").css("display", "block");
+  // }
+
+  // function addPayItem2() {
+  //   $(".payout__wrapper:nth-child(2)").css("display", "none");
+  //   $(".payout__wrapper:last-child").css("display", "block");
+  // }
+
+  // setTimeout(addPayItem, 3000);
+  // setTimeout(addPayItem2, 6000);
+
+   function addPayItem1() {
+    $('#payout-1').hide(800);
+    $('#payout-2').show(500);
+    // $('#payout-2').hide(1000);
+    // $('#payout-3').show(3000);
+    // $('#payout-3').hide(1000);
+    // $('#payout-1').show(3000);
   }
 
   function addPayItem2() {
-    $(".payout__wrapper:nth-child(2)").css("display", "none");
-    $(".payout__wrapper:last-child").css("display", "block");
+    $('#payout-2').hide(800);
+    $('#payout-3').show(500);
   }
 
-  setTimeout(addPayItem, 3000);
-  setTimeout(addPayItem2, 6000);
+  setTimeout(addPayItem1, 5000);
+  setTimeout(addPayItem2, 10000);
+
 
   // Preloader
   var $preloader = $('#p_prldr'),
@@ -193,9 +211,9 @@ $(function() {
 
     setTimeout(pridrMoney, 50000);
 
-    // Money
+    // Moneys
 
-    let pridr__money = -170;
+    let pridr__money = -159;
     $('#gold__money').html(pridr__money);
 
     function incrMoney() {

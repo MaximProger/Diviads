@@ -405,6 +405,26 @@ h4 {
   position: relative;
 }
 
+.info__id {
+  margin: 0;
+  color: white;
+
+  span {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
+.info__money {
+  color: white;
+
+  span {
+    color: #db4437;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+}
+
 .info__text {
   font-size: 20px;
   font-weight: bold;
@@ -416,13 +436,6 @@ h4 {
   @media (max-width: $mobile) {
     font-size: 16px;
   }
-
-  &:nth-child(3) {
-    margin-bottom: 60px;
-    @media (max-width: $mobile) {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .info__btn {
@@ -430,9 +443,9 @@ h4 {
   transition: font-size 0.2s linear;
   margin: 10px;
   margin-bottom: 20px;
-  position: absolute;
-  right: 180px;
-  top: 220px;
+  // position: absolute;
+  // right: 180px;
+  // top: 220px;
 
   &.animation {
     font-size: 24px;
@@ -442,27 +455,26 @@ h4 {
 
   
 
-  @media (max-width: 1200px) {
-    right: 120px;
-  }
+  // @media (max-width: 1200px) {
+  //   right: 120px;
+  // }
 
-  @media (max-width: $notebook) {
-    right: 155px;
-  }
+  // @media (max-width: $notebook) {
+  //   right: 155px;
+  // }
 
-  @media (max-width: $tablet) {
-    right: 65px;
-  }
+  // @media (max-width: $tablet) {
+  //   right: 65px;
+  // }
 
-  @media (max-width: $mobile) {
-    position: static;
-    top: 195px;
-    right: 30px;
-  }
+  // @media (max-width: $mobile) {
+  //   position: static;
+  //   top: 195px;
+  //   right: 30px;
+  // }
 
   @media (max-width: $mobile-sm) {
     font-size: 16px;
-    position: static;
   }
 
 }
@@ -504,6 +516,7 @@ h4 {
 
 .payouts {
   padding: 60px 0;
+
 }
 
 .payouts__title {
@@ -515,9 +528,13 @@ h4 {
 .payout__wrapper {
   display: none;
 
-  &:first-child {
-    display: block;
-  }
+  // &:first-child {
+  //   display: block;
+  // }
+}
+
+#payout-1 {
+  display: block;
 }
 
 .payout__item {
@@ -684,7 +701,7 @@ h4 {
 // Preloader
 
 #p_prldr{
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right:0;
@@ -725,6 +742,13 @@ h4 {
     background: url('../img/src/circles.svg');
     background-size:80px;  
     margin: 110px 0 0 -40px;
+    @media (max-width: $tablet) {
+      margin: 150px 0 0 -40px;
+    }
+
+    @media (max-width: 400px) {
+      margin: 190px 0 0 -40px;
+    }
   }
 }
 
@@ -777,5 +801,170 @@ h4 {
   font-weight: bold;
   span {
     color: rgb(223, 226, 34);
+  }
+}
+
+// Analys
+
+.analys {
+  padding: 60px 0;
+  background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
+
+  @media (max-width: $notebook) {
+    padding-bottom: 30px;
+  }
+}
+
+.analys__content {
+  &.col-8 {
+    @media (max-width: $notebook) {
+      flex-basis: auto;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.analys__title {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info_body {
+  position: relative;
+}
+
+.info__pos {
+  position: relative;
+}
+
+.analys__text {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+  span {
+    color: #db4437;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.analys__btn {
+  font-size: 22px;
+  margin: 10px;
+  
+  @media (max-width: $notebook) {
+    margin-bottom: 30px;
+  }
+
+  &.animation {
+    font-size: 24px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  
+
+  @media (max-width: 1200px) {
+    right: 120px;
+  }
+
+  @media (max-width: $notebook) {
+    right: 155px;
+  }
+
+  @media (max-width: $tablet) {
+    right: 65px;
+  }
+
+  @media (max-width: $mobile) {
+    position: static;
+    top: 195px;
+    right: 30px;
+  }
+
+  @media (max-width: $mobile-sm) {
+    font-size: 16px;
+    position: static;
+  }
+
+}
+
+.analys__btn__link {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.analys__img__wrapper {
+  
+  text-align: center;
+  img {
+    max-width: 100%;
+    @media (max-width: $mobile-sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+// Data
+
+.data {
+  padding: 60px 0;
+}
+
+.data__content {
+  &.col-8 {
+    @media (max-width: $notebook) {
+      flex-basis: auto;
+      flex: 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+}
+
+.data__title {
+  color: $viob;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.data__text {
+  font-size: 20px;
+  color: $viob;
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.date__money {
+  font-weight: bold;
+  color: #db4437;
+}
+
+.data__img__wrapper {
+  
+  text-align: center;
+
+  @media (max-width: $notebook) {
+    order: 2;
+  }
+  img {
+    max-width: 100%;
+    @media (max-width: $mobile-sm) {
+      max-width: 100%;
+    }
   }
 }
