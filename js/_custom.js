@@ -155,6 +155,11 @@ $(function() {
         $svg_anm   = $preloader.find('.svg_anm');
     $preloader.delay(55000).fadeOut('slow');
 
+  // Loader
+  var $loader = $('#p_prldr'),
+  $svg_anm   = $preloader.find('.svg_anm');
+$loader.delay(Infinity).fadeOut('slow');
+
   // Text change and hide
 
     function changeText() {

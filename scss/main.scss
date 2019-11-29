@@ -58,6 +58,10 @@ h4 {
   left: 0;
   right: 0;
   z-index: 1000;
+
+  &--admin {
+    padding-top: 20px;
+  }
 }
 
 .header__logo {
@@ -227,6 +231,11 @@ h4 {
     padding-bottom: 40px;
   }
 
+  &--admin {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
   @media (max-width: $mobile) {
     padding-top: 120px;
     padding-bottom: 40px;
@@ -278,6 +287,10 @@ h4 {
       top: 10%;
     }
   }
+
+&--admin {
+  top: 40%;
+}
 }
 
 .intro__title {
@@ -442,6 +455,13 @@ h4 {
   span {
     color: $blue;
   }
+
+  &--admin {
+    color: $viob;
+    span {
+      color: $text;
+    }
+  }
 }
 
 .info__money {
@@ -454,6 +474,10 @@ h4 {
     font-weight: 900;
     font-size: 1.7rem;
     
+  }
+  &--admin {
+    color: $viob;
+    font-size: 1.5rem;
   }
 }
 
@@ -744,6 +768,43 @@ h4 {
 
 // service__action.html
 
+// Loader
+
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
+  z-index: 1001;
+}
+
+#loader .svg_anm {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('../img/src/oval.svg');
+  background-size: 30px;   
+  margin: 5px 0 0 5px; 
+  
+
+  &-1 {
+    width: 80px;
+    height: 80px;
+    background: url('../img/src/circles.svg');
+    background-size:80px;  
+    margin: 110px 0 0 -40px;
+    @media (max-width: $tablet) {
+      margin: 150px 0 0 -40px;
+    }
+
+    @media (max-width: 400px) {
+      margin: 190px 0 0 -40px;
+    }
+  }
+}
+
 // Preloader
 
 #p_prldr{
@@ -753,7 +814,8 @@ h4 {
   right:0;
   bottom:0;
   background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
-  z-index: 1001;}
+  z-index: 1001;
+}
    
   .contpre small{font-size:25px;}
    
@@ -1044,6 +1106,15 @@ h4 {
 
 }
 
+.output__inner {
+  &.col-9 {
+    @media (max-width: $tablet) {
+      flex-basis: auto;
+      max-width: 100%;
+    }
+  }
+}
+
 .output__title {
   color: $viob;
   font-weight: bold;
@@ -1124,4 +1195,25 @@ h4 {
 
 .news__text {
   color: $text;
+}
+
+// Admin 
+
+.admin__name {
+  margin-top: 10px;
+  color: $viob;
+  font-weight: bold;
+}
+
+.admin__photo {
+  img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.admin__connect {
+  color: #00c04a;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
