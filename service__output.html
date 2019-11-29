@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/41064ceb63.js"></script>
-    <!-- Cards Form -->
-    <link rel="stylesheet" href="css/creditly.css">
+	<script src="https://kit.fontawesome.com/41064ceb63.js"></script>
+	<!-- Cards Form -->
+	<link rel="stylesheet" href="css/creditly.css">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/styles.min.css">
 	<!-- Slick Slider -->
@@ -36,14 +36,14 @@
 					<a href="#" class="nav__link" data-toggle="modal" data-target="#newsService">Новости сервиса</a>
 					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">Проверить
 						начисления</a>
-					<a href="#" class="nav__link" data-toggle="modal" data-target="#exampleModalCenter">F.A.Q.</a>
+					<a href="#" class="nav__link" data-toggle="modal" data-target="#faq">F.A.Q.</a>
 				</nav>
 				<button class="nav--toggle" id="nav__toggle" type="button">
 					<span class="nav--toggle__item">Menu</span>
 				</button>
 			</div>
 		</div>
-    </header>
+	</header>
 
 	<section class="intro intro--service">
 		<div class="container">
@@ -61,53 +61,68 @@
 				</div>
 				<div class="intro__img__wrapper col"><img class="intro__img" src="./img/src/intro__logo-2.png"
 						alt="Intro Logo"></div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="output">
-        <div class="container">
-            <div class="output__inner row align-items-center">
-                <div class="output__content text-center">
-                    <h2 class="output__title">Доступно к выплате: <span class="balance"></span></h2>
-                    <div class="output__form">
-                        <section class="creditly-wrapper gray-theme">
-                            <h3>Credit Card</h3>
-                            <i>
-                              <div class="card-type" style="text-align:right;margin-top:10px;margin-right:10px;min-height:20px;margin-bottom:-15px"></div>
-                            </i>
-                            <div class="credit-card-wrapper">
-                              <div class="first-row form-group">
-                                <div class="col-sm-12 controls">
-                                  <label class="control-label">Card Number</label>
-                                  <input class="number credit-card-number form-control"
-                                    type="text" name="number"
-                                    pattern="\d*"
-                                    inputmode="numeric" autocomplete="cc-number" autocompletetype="cc-number" x-autocompletetype="cc-number"
-                                    placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
-                                </div>
-                              </div>
-                              <div class="second-row form-group">
-                                <div class="col-sm-12 controls">
-                                  <label class="control-label">Name on Card</label>
-                                  <input class="billing-address-name form-control"
-                                    type="text" name="name"
-                                    placeholder="John Smith">
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                    </div>
-                    <p class="output__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero maxime nulla ducimus fugit officiis magni dignissimos eligendi minima commodi eius iste aut perferendis quia nostrum dicta non debitis, id cum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero maxime nulla ducimus fugit officiis magni dignissimos eligendi minima commodi eius iste aut perferendis quia nostrum dicta non debitis, id cum!</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-lg btn-danger analys__btn">Вывести</button>
-            </div>
-        </div>
-    </section>
+			</div>
+		</div>
+	</section>
 
-	
+	<section class="output">
+		<div class="container">
+			<div class="output__inner row align-items-center">
+				<div class="output__content text-center">
+					<h2 class="output__title">Доступно к выплате: <span class="balance"></span></h2>
+					<p class="output__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+						voluptatum amet expedita modi assumenda omnis culpa, quam minus aliquam perspiciatis sit cum
+						veritatis, dolore repudiandae. Dignissimos consectetur autem adipisci ullam!</p>
+					<div class="output__form">
+						<section class="creditly-wrapper gray-theme">
+							<h3>Заявка на выплату</h3>
+							<i>
+								<div class="card-type"
+									style="text-align:right;margin-top:10px;margin-right:10px;min-height:20px;margin-bottom:-15px">
+								</div>
+							</i>
+							<div class="credit-card-wrapper">
+								<div class="second-row form-group">
+									<div class="col-sm-12 controls">
+										<label class="control-label">Имя владельца</label>
+										<input class="billing-address-name form-control" type="text" name="name"
+											placeholder="John Smith">
+									</div>
+									<div class="col-sm-4 controls" style="display: none;">
+										<label class="control-label">Expiration</label>
+										<input class="expiration-month-and-year form-control" type="text"
+											name="expiration-month-and-year" placeholder="MM / YY">
+									</div>
+								</div>
+								<div class="first-row form-group">
+									<div class="col-sm-12 controls">
+										<label class="control-label">Номер карты</label>
+										<input class="number credit-card-number form-control" type="text" name="number"
+											pattern="\d*" inputmode="numeric" autocomplete="cc-number"
+											autocompletetype="cc-number" x-autocompletetype="cc-number"
+											placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+									</div>
+									<div class="col-sm-4 controls" style="display: none;">
+										<label class="control-label">CVV</label>
+										<input class="security-code form-control" · inputmode="numeric" pattern="\d*"
+											type="text" name="security-code" placeholder="&#149;&#149;&#149;">
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<p class="output__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+						voluptatum amet expedita modi assumenda omnis culpa, quam minus aliquam perspiciatis sit cum
+						veritatis, dolore repudiandae. Dignissimos consectetur autem adipisci ullam!</p>
+				</div>
+			</div>
+			<div class="text-center">
+				<button type="button" class="btn btn-lg btn-danger analys__btn">Вывести средства</button>
+			</div>
+		</div>
+	</section>
+
+
 
 	<section class="payouts payouts--service">
 		<div class="container text-center">
@@ -270,9 +285,94 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="newsService" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	<!-- Modal News -->
+	<div class="modal fade" id="newsService" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
 		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">F.A.Q.</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<div class="news__date text-right"><i class="far fa-calendar-alt"></i> 29.11.19</div>
+						<h5 class="news__title"><i class="far fa-newspaper"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- F.A.Q. -->
+	<div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLongTitle">Новости сервиса</h5>
@@ -281,12 +381,37 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt
-						aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate
-						consequatur numquam iure minima sed, iste eos repudiandae?</p>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum non molestiae nesciunt
-						aliquam praesentium aspernatur assumenda, quod temporibus, necessitatibus ut voluptate
-						consequatur numquam iure minima sed, iste eos repudiandae?</p>
+
+					<div class="news__item">
+						<h5 class="news__title"><i class="fas fa-question-circle"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<h5 class="news__title"><i class="fas fa-question-circle"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<h5 class="news__title"><i class="fas fa-question-circle"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+					<div class="news__item">
+						<h5 class="news__title"><i class="fas fa-question-circle"></i> Lorem ipsum</h5>
+						<p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+							necessitatibus, voluptatum accusantium nulla expedita sapiente architecto atque? Excepturi
+							fugiat hic sed, nisi maiores architecto. Assumenda itaque vel perspiciatis molestias
+							voluptate.</p>
+					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -301,9 +426,9 @@
 		crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Cards Form -->
-    <script type="text/javascript" src="js/creditly.js"></script>
+		crossorigin="anonymous"></script>
+	<!-- Cards Form -->
+	<script type="text/javascript" src="js/creditly.js"></script>
 	<!-- JS -->
 	<script src="js/scripts.min.js"></script>
 	<!-- Slick Slider -->

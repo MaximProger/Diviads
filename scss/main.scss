@@ -1083,3 +1083,45 @@ h4 {
     font-size: 1rem;
   }
 }
+
+// Modal window
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  color: $viob;
+ 
+}
+
+.modal-body {
+  padding-top: 0;
+}
+
+.news__item {
+  padding: 16px;
+  border-bottom: 1px dashed $gray;
+
+  &:first-child {
+    border-top: 1px dashed $gray;
+  }
+
+  &:nth-child(even) {
+    background-color: $color-4; 
+  }
+}
+
+.news__date {
+  i {
+    color: #0470dc;
+  }
+}
+
+.news__title {
+  color: $viob;
+}
+
+.news__text {
+  color: $text;
+}
