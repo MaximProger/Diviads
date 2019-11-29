@@ -1,7 +1,5 @@
 $(function() {
-
   // index.html
-
 
   // Slider
 
@@ -103,39 +101,19 @@ $(function() {
 
   $(".date").html(day + "." + month + "." + year + " " + hour + ":" + minutes);
 
-  // function addPayItem() {
-  //   $('.payout__item:first-child').css('display', 'flex');
-  //   $('.payout__item:last-child').css('display', 'none');
-  // }
-
-  // setInterval(addPayItem, 2000);
-
-  // function addPayItem() {
-  //   $(".payout__wrapper:first-child").css("display", "none");
-  //   $(".payout__wrapper:nth-child(2)").css("display", "block");
-  // }
-
-  // function addPayItem2() {
-  //   $(".payout__wrapper:nth-child(2)").css("display", "none");
-  //   $(".payout__wrapper:last-child").css("display", "block");
-  // }
-
-  // setTimeout(addPayItem, 3000);
-  // setTimeout(addPayItem2, 6000);
-
-   function addPayItem1() {
-    $('#payout-1').hide(800);
-    $('#payout-2').show(500);
+  function addPayItem1() {
+    $("#payout-1").hide(800);
+    $("#payout-2").show(500);
   }
 
   function addPayItem2() {
-    $('#payout-2').hide(800);
-    $('#payout-3').show(500);
+    $("#payout-2").hide(800);
+    $("#payout-3").show(500);
   }
 
   function addPayItem3() {
-    $('#payout-3').hide(800);
-    $('#payout-1').show(500);
+    $("#payout-3").hide(800);
+    $("#payout-1").show(500);
   }
 
   function setChangeTable() {
@@ -151,135 +129,136 @@ $(function() {
   // service__action.html
 
   // Preloader
-  var $preloader = $('#p_prldr'),
-        $svg_anm   = $preloader.find('.svg_anm');
-    $preloader.delay(55000).fadeOut('slow');
+  var $preloader = $("#p_prldr"),
+    $svg_anm = $preloader.find(".svg_anm");
+  $preloader.delay(55000).fadeOut("slow");
 
   // Loader
-  var $loader = $('#p_prldr'),
-  $svg_anm   = $preloader.find('.svg_anm');
-$loader.delay(Infinity).fadeOut('slow');
+  var $loader = $("#p_prldr"),
+    $svg_anm = $preloader.find(".svg_anm");
+  $loader.delay(Infinity).fadeOut("slow");
 
   // Text change and hide
 
-    function changeText() {
-      $('#pre__text').text('Запрос к провайдеру...');
-    }
+  function changeText() {
+    $("#pre__text").text("Запрос к провайдеру...");
+  }
 
-    function changeText2() {
-      $('#pre__text').text('Определение ID устройства...');
-    }
+  function changeText2() {
+    $("#pre__text").text("Определение ID устройства...");
+  }
 
-    function changeText3() {
-      $('#pre__text').text('Сверка используемых IP адресов...');
-    }
+  function changeText3() {
+    $("#pre__text").text("Сверка используемых IP адресов...");
+  }
 
-    function changeText4() {
-      $('#pre__text').text('');
-    }
+  function changeText4() {
+    $("#pre__text").text("");
+  }
 
-    setTimeout(changeText, 5000);
-    setTimeout(changeText2, 10000);
-    setTimeout(changeText3, 15000);
-    setTimeout(changeText4, 20000);
+  setTimeout(changeText, 5000);
+  setTimeout(changeText2, 10000);
+  setTimeout(changeText3, 15000);
+  setTimeout(changeText4, 20000);
 
-    // Analys Show
+  // Analys Show
 
-    function pridrTitle() {
-      $('#pridr__view').show(500);
-    }
+  function pridrTitle() {
+    $("#pridr__view").show(500);
+  }
 
-    setTimeout(pridrTitle, 20000);
+  setTimeout(pridrTitle, 20000);
 
-    function pridrSocial() {
-      $('#pridr__social').show(500);
-    }
+  function pridrSocial() {
+    $("#pridr__social").show(500);
+  }
 
-    setTimeout(pridrSocial, 25000);
+  setTimeout(pridrSocial, 25000);
 
-    function pridrMessanger() {
-      $('#pridr__messanger').show(500);
-    }
+  function pridrMessanger() {
+    $("#pridr__messanger").show(500);
+  }
 
-    setTimeout(pridrMessanger, 30000);
+  setTimeout(pridrMessanger, 30000);
 
-    function pridrVideo() {
-      $('#pridr__video').show(500);
-    }
+  function pridrVideo() {
+    $("#pridr__video").show(500);
+  }
 
-    setTimeout(pridrVideo, 35000);
+  setTimeout(pridrVideo, 35000);
 
-     // Analys Hide
+  // Analys Hide
 
-     function analysHide() {
-      $('#pridr__view').hide(500);
-      $('#pridr__social').hide(500);
-      $('#pridr__messanger').hide(500);
-      $('#pridr__video').hide(500);
-    }
+  function analysHide() {
+    $("#pridr__view").hide(500);
+    $("#pridr__social").hide(500);
+    $("#pridr__messanger").hide(500);
+    $("#pridr__video").hide(500);
+  }
 
-    setTimeout(analysHide, 40000);
+  setTimeout(analysHide, 40000);
 
-    // Content Show
+  // Content Show
 
-    function pridrContent() {
-      $('#pridr__content').show(500);
-    }
+  function pridrContent() {
+    $("#pridr__content").show(500);
+  }
 
-    setTimeout(pridrContent, 40000);
+  setTimeout(pridrContent, 40000);
 
-    function pridrCabinet() {
-      $('#pridr__cabinet').show(500);
-    }
+  function pridrCabinet() {
+    $("#pridr__cabinet").show(500);
+  }
 
-    setTimeout(pridrCabinet, 45000);
+  setTimeout(pridrCabinet, 45000);
 
-    // Content Hide
+  // Content Hide
 
-    function contentHide() {
-      $('#pridr__content').show(500);
-      $('#pridr__cabinet').show(500);
-      $('#pridr__content').hide(500);
-      $('#pridr__cabinet').hide(500);
-    }
+  function contentHide() {
+    $("#pridr__content").show(500);
+    $("#pridr__cabinet").show(500);
+    $("#pridr__content").hide(500);
+    $("#pridr__cabinet").hide(500);
+  }
 
-    setTimeout(contentHide, 50000);
+  setTimeout(contentHide, 50000);
 
-    function pridrReward() {
-      $('#pridr__reward').show(500);
-    }
+  function pridrReward() {
+    $("#pridr__reward").show(500);
+  }
 
-    setTimeout(pridrReward, 50000);
+  setTimeout(pridrReward, 50000);
 
-    function pridrMoney() {
-      $('#pridr__money').show(500);
-    }
+  function pridrMoney() {
+    $("#pridr__money").show(500);
+  }
 
-    setTimeout(pridrMoney, 50000);
+  setTimeout(pridrMoney, 50000);
 
-    // Moneys
+  // Moneys
 
-    let pridr__money = 0;
-    $('#gold__money').html(pridr__money);
+  let pridr__money = 0;
+  $("#gold__money").html(pridr__money);
 
-    function incrMoney() {
-      pridr__money += 1;
-      $("#gold__money").html(pridr__money);
-    }
+  function incrMoney() {
+    pridr__money += 1;
+    $("#gold__money").html(pridr__money);
+  }
 
-    setInterval(incrMoney, 300);
+  setInterval(incrMoney, 300);
 
-    // service__output.html
+  // service__output.html
 
-    // Blalance
-    let balance = 20;
-    $('.balance').html('$' + balance);
+  // Blalance
+  let balance = 20;
+  $(".balance").html("$" + balance);
 
-    // Cards Form
+  // Cards Form
 
-    var creditly = Creditly.initialize(
-      '.creditly-wrapper .expiration-month-and-year',
-      '.creditly-wrapper .credit-card-number',
-      '.creditly-wrapper .security-code',
-      '.creditly-wrapper .card-type');
+  var creditly = Creditly.initialize(
+    ".creditly-wrapper .expiration-month-and-year",
+    ".creditly-wrapper .credit-card-number",
+    ".creditly-wrapper .security-code",
+    ".creditly-wrapper .card-type"
+  );
 });

@@ -26,10 +26,10 @@ h4 {
   color: white;
 }
 
-// Button 
+// Button
 
 .btn {
-  transition: color .2s linear, background-color .2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
 }
 
 // Container
@@ -49,8 +49,6 @@ h4 {
 // Header
 
 .header {
-  // background-color: $color-1;
-  // color: $color-4;
   padding-top: 40px;
   width: 100%;
   position: absolute;
@@ -210,9 +208,9 @@ h4 {
   }
 
   @media (max-width: $notebook) {
-	width: 100%;
-	padding-right: 0x;
-  	border-right: none;
+    width: 100%;
+    padding-right: 0x;
+    border-right: none;
   }
 }
 
@@ -288,9 +286,9 @@ h4 {
     }
   }
 
-&--admin {
-  top: 40%;
-}
+  &--admin {
+    top: 40%;
+  }
 }
 
 .intro__title {
@@ -334,7 +332,6 @@ h4 {
   @media (max-width: $mobile) {
     width: 100%;
   }
-
 }
 
 .intro__img {
@@ -473,7 +470,6 @@ h4 {
     color: #db4437;
     font-weight: 900;
     font-size: 1.7rem;
-    
   }
   &--admin {
     color: $viob;
@@ -498,9 +494,6 @@ h4 {
   font-size: 22px;
   margin: 10px;
   margin-bottom: 20px;
-  // position: absolute;
-  // right: 180px;
-  // top: 220px;
 
   &.animation {
     font-size: 24px;
@@ -508,30 +501,9 @@ h4 {
     margin-bottom: 20px;
   }
 
-  
-
-  // @media (max-width: 1200px) {
-  //   right: 120px;
-  // }
-
-  // @media (max-width: $notebook) {
-  //   right: 155px;
-  // }
-
-  // @media (max-width: $tablet) {
-  //   right: 65px;
-  // }
-
-  // @media (max-width: $mobile) {
-  //   position: static;
-  //   top: 195px;
-  //   right: 30px;
-  // }
-
   @media (max-width: $mobile-sm) {
     font-size: 16px;
   }
-
 }
 
 .info__btn__link {
@@ -578,7 +550,6 @@ h4 {
       color: $text;
     }
   }
-
 }
 
 .payouts__title {
@@ -774,8 +745,8 @@ h4 {
   position: fixed;
   left: 0;
   top: 0;
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
   z-index: 1001;
 }
@@ -784,16 +755,15 @@ h4 {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url('../img/src/oval.svg');
-  background-size: 30px;   
-  margin: 5px 0 0 5px; 
-  
+  background: url("../img/src/oval.svg");
+  background-size: 30px;
+  margin: 5px 0 0 5px;
 
   &-1 {
     width: 80px;
     height: 80px;
-    background: url('../img/src/circles.svg');
-    background-size:80px;  
+    background: url("../img/src/circles.svg");
+    background-size: 80px;
     margin: 110px 0 0 -40px;
     @media (max-width: $tablet) {
       margin: 150px 0 0 -40px;
@@ -807,19 +777,21 @@ h4 {
 
 // Preloader
 
-#p_prldr{
+#p_prldr {
   position: fixed;
   left: 0;
   top: 0;
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
   z-index: 1001;
 }
-   
-  .contpre small{font-size:25px;}
-   
-  .contpre{
+
+.contpre small {
+  font-size: 25px;
+}
+
+.contpre {
   // width: 300px;
   // height: 100px;
   // position: absolute;
@@ -827,28 +799,27 @@ h4 {
   // margin-left:-125px;
   // margin-top:-75px;
   padding-top: 60px;
-  color:#fff;
-  font-size:18px;
- 
-  text-align:center;
-  line-height:35px;
+  color: #fff;
+  font-size: 18px;
+
+  text-align: center;
+  line-height: 35px;
   position: relative;
 }
-   
-  #p_prldr .svg_anm {
+
+#p_prldr .svg_anm {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url('../img/src/oval.svg');
-  background-size: 30px;   
-  margin: 5px 0 0 5px; 
-  
+  background: url("../img/src/oval.svg");
+  background-size: 30px;
+  margin: 5px 0 0 5px;
 
   &-1 {
     width: 80px;
     height: 80px;
-    background: url('../img/src/circles.svg');
-    background-size:80px;  
+    background: url("../img/src/circles.svg");
+    background-size: 80px;
     margin: 110px 0 0 -40px;
     @media (max-width: $tablet) {
       margin: 150px 0 0 -40px;
@@ -860,10 +831,10 @@ h4 {
   }
 }
 
-  #pre__text {
-    margin-top: 110px;
-    color: $blue;
-  }
+#pre__text {
+  margin-top: 110px;
+  color: $blue;
+}
 
 .pridr__text {
   i {
@@ -914,7 +885,7 @@ h4 {
   }
 }
 
-// Service Main 
+// Service Main
 
 .service__main {
   padding: 40px 0;
@@ -971,7 +942,6 @@ h4 {
     font-size: 1.3rem;
   }
 
-
   @media (max-width: $mobile) {
     font-size: 16px;
   }
@@ -985,7 +955,7 @@ h4 {
   font-size: 30px;
   margin: 10px;
   margin-top: 20px;
-  
+
   @media (max-width: $notebook) {
     margin-bottom: 30px;
   }
@@ -995,8 +965,6 @@ h4 {
     margin: 10px;
     margin-bottom: 20px;
   }
-
-  
 
   @media (max-width: 1200px) {
     right: 120px;
@@ -1020,7 +988,6 @@ h4 {
     font-size: 16px;
     position: static;
   }
-
 }
 
 .analys__btn__link {
@@ -1033,7 +1000,6 @@ h4 {
 }
 
 .analys__img__wrapper {
-  
   text-align: center;
   img {
     max-width: 100%;
@@ -1081,7 +1047,6 @@ h4 {
 }
 
 .data__img__wrapper {
-  
   text-align: center;
 
   @media (max-width: $notebook) {
@@ -1103,7 +1068,6 @@ h4 {
   padding: 60px 0;
   color: $text;
   border-bottom: 1px dashed $gray;
-
 }
 
 .output__inner {
@@ -1163,7 +1127,6 @@ h4 {
 
 .modal-title {
   color: $viob;
- 
 }
 
 .modal-body {
@@ -1179,7 +1142,7 @@ h4 {
   }
 
   &:nth-child(even) {
-    background-color: $color-4; 
+    background-color: $color-4;
   }
 }
 
@@ -1197,7 +1160,7 @@ h4 {
   color: $text;
 }
 
-// Admin 
+// Admin
 
 .admin__name {
   margin-top: 10px;
